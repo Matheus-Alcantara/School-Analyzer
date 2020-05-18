@@ -1,0 +1,24 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+app-radar-chart {
+  max-width: 650px;
+  max-height: 400px;
+}
+h1 {
+  font-size: 36px;
+}
+
+p {
+font-size: 16px;
+margin-bottom: 60px;
+align-self: center;
+}
+
+div {
+  margin: auto;
+  max-width: 650px;
+  max-height: 100vh;
+  display: block;
+  align-items: center;
+}
+

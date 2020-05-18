@@ -1,0 +1,19 @@
+<div>
+  <h1>Student Analyzer</h1>
+  <p>And here is were you can see student specific grades.</p>
+</div>
+
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let radarChartData of Data.radarChartData; index as i">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Student's name
+      </mat-panel-title>
+      <mat-panel-description>
+        Click me to see the grades of this student!
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+  <app-radar-chart [radarChartData]="radarChartData.chartData" [radarChartLabels]="radarChartData.chartLabels"></app-radar-chart>
+  </mat-expansion-panel>
+</mat-accordion>
